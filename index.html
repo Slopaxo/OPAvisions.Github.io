@@ -82,6 +82,29 @@
     <body>
         <h1>OPA Visions</h1>
         <img src="image.jpg" alt="Image">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/watch?v=M6sw_TseV9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
 </html>
+<html>
+    <head>
+        <title>Autoplay Example</title>
+    </head>
+    <body>
+        <button id="playButton">Play</button>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<script>
+    document.getElementById("playButton").addEventListener("click", function() {
+        var promise = document.querySelector('video').play();
+        if (promise !== undefined) {
+            promise.catch(error => {
+                // Auto-play was prevented
+                // Show a UI element to let the user manually start playback
+            }).then(() => {
+                // Auto-play started
+            });
+        }
+    });
+</script>
