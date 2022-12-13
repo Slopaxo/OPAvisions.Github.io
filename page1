@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My New Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>OPA VISIONS!</h1>
+    <div class="container">
+      <div class="main-content">
+        <p>This is the main content of the website.</p>
+      </div>
+      <div class="sidebar">
+        <p>This is the sidebar content.</p>
+      </div>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OPA VISIONS!</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Welcome to OPA VISIONS!</h1>
+    <p>We are a website that offers solutions for all your vision needs.</p>
+    <a href="main-content.html">Read more about us.</a>
+  </body>
+</html>
