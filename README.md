@@ -66,3 +66,25 @@ a:hover {
         <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
 </html>
+<html>
+    <head>
+        <title>"https://www.youtube.com/watch?v=ouxY5F_YxSk"</title>
+    </head>
+    <body>
+        <button id="playButton">Play</button>
+        <script src="script.js"></script>
+    </body>
+</html>
+<script>
+    document.getElementById("playButton").addEventListener("click", function() {
+        var promise = document.querySelector('video').play(); // Missing video element
+        if (promise !== undefined) {
+            promise.catch(error => {
+                // Auto-play was prevented
+                // Show a UI element to let the user manually start playback
+            }).then(() => {
+                // Auto-play started
+            });
+        }
+    });
+</script>
